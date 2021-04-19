@@ -6,11 +6,13 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import './common/style/main.css';
 import echarts from 'echarts';
+import filterRules from './common/utils/validate/validate';
 
 import Message from './common/components/message/message.js';
 Vue.use(Message);
 Vue.prototype.$echarts = echarts;
 Vue.use(ElementUI);
+Vue.use(filterRules);
 
 Vue.config.productionTip = false 
 

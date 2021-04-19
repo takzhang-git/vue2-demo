@@ -57,6 +57,16 @@ export default new Router({
       component: () => import(/* webpackChunkName: functiontest */ '@/pages/functiontest')
     },
     {
+      path: '/nextTick',
+      name: 'nextTick',
+      component: () => import(/* webpackChunkName: nextTick */ '@/pages/nextTick')
+    },
+    {
+      path: '/formValidate',
+      name: 'formValidate',
+      component: () => import(/* webpackChunkName: formValidate */ '@/pages/formValidate'),
+    },
+    {
       path: '*',
       name: 'notFound',
       component: () => import(/* webpackChunkName: notFound */ '@/pages/404')
