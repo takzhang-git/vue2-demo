@@ -67,6 +67,11 @@ export default new Router({
       component: () => import(/* webpackChunkName: formValidate */ '@/pages/formValidate'),
     },
     {
+      path: '/pictures',
+      name: 'pictures',
+      component: () => import(/* webpackChunkName: pictures */ '@/pages/pictures'),
+    },
+    {
       path: '*',
       name: 'notFound',
       component: () => import(/* webpackChunkName: notFound */ '@/pages/404')
