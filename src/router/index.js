@@ -67,6 +67,11 @@ export default new Router({
       component: () => import(/* webpackChunkName: formValidate */ '@/pages/formValidate'),
     },
     {
+      path: '/v-viewer',
+      name: 'vueViewer',
+      component: () => import(/* webpackChunkName: vueViewer */ '@/pages/v-viewer'),
+    },
+    {
       path: '*',
       name: 'notFound',
       component: () => import(/* webpackChunkName: notFound */ '@/pages/404')
