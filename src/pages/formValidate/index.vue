@@ -7,7 +7,7 @@
             <el-form-item
                 label="数字限制"
                 prop="numberBetween"
-                :rules="filterRules({
+                :rules="validateRules({
                     type: 'numberBetween', minNum: 10, maxNum: 20, required: true, message: '此项必填'
                 })"
             >
@@ -16,7 +16,7 @@
             <el-form-item
                 label="长度限制"
                 prop="lengthLimit"
-                :rules="filterRules({
+                :rules="validateRules({
                     max: 20, maxMess: '不超过20个字', required: true, message: '此项必须填写'
                 })"
             >
@@ -25,7 +25,7 @@
             <el-form-item
                 label="邮箱"
                 prop="email"
-                :rules="filterRules({
+                :rules="validateRules({
                     required: true, message: '邮箱必填',
                     type: 'email',
                 })"

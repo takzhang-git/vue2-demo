@@ -117,7 +117,7 @@ export default {
          * maxLength 字符串的最大长度
          * min < max
          */
-        Vue.prototype.filterRules = (item) => {
+        Vue.prototype.validateRules = (item) => {
             const rules = [];
             if (item.required) {
                 rules.push({

@@ -82,6 +82,11 @@ export default new Router({
       component: () => import(/* webpackChunkName: mixins */ '@/pages/mixins'),
     },
     {
+      path: '/filter',
+      name: 'filter',
+      component: () => import(/* webpackChunkName: filter */ '@/pages/filter'),
+    },
+    {
       path: '*',
       name: 'notFound',
       component: () => import(/* webpackChunkName: notFound */ '@/pages/404')
