@@ -77,6 +77,11 @@ export default new Router({
       component: () => import(/* webpackChunkName: pictures */ '@/pages/pictures'),
     },
     {
+      path: '/mixins',
+      name: 'mixins',
+      component: () => import(/* webpackChunkName: mixins */ '@/pages/mixins'),
+    },
+    {
       path: '*',
       name: 'notFound',
       component: () => import(/* webpackChunkName: notFound */ '@/pages/404')

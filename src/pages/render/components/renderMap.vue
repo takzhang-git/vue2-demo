@@ -19,10 +19,30 @@ Vue.component('item-list', {
             return h('ul', {
                 class: 'for-items',
             },this.data.map( (item) => h('li',{
-                domProps: {
-                    innerHTML: item.name,
+                // domProps: {
+                //     innerHTML: item.name,
+                // }
+                style: {
+                    margin: '20px',
+                    fontSize: '18px',
+                    color: 'pink',
+                    background: 'green',
+                    height: '20px',
+                    lineHeight: '20px',
+                    width: '200px'
                 }
-            })))
+            }, [
+                h('span', {
+                    domProps: {
+                        innerHTML: item.name + ':',
+                    }
+                }),
+                h('span', {
+                    domProps: {
+                        innerHTML: item.age,
+                    }
+                })
+            ])))
         } else {
             return h('p', {
                 domProps: {

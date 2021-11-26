@@ -24,6 +24,7 @@ Vue.component('custom-element', {
                     width: '200px',
                     height: '200px',
                     background: 'pink',
+                    margin: '20px'
                 },
                 domProps: {
                     innerHTML: '测试render',
@@ -33,12 +34,15 @@ Vue.component('custom-element', {
                 props: {
                     type: 'date',
                     placeholder: '选择日期吧啊哈哈'
-                }
+                },
             }),
             h('el-button', {
                 props: {
                     type: 'primary',
                     round: 'round',
+                },
+                style: {
+                    marginLeft: '20px'
                 },
                 domProps: {
                     innerHTML: '按钮哈哈'
