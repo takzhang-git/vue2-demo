@@ -35,7 +35,7 @@ export default {
         modalTip(){
             this.$Message.info({
                 title: '提示',
-                content: '这是一条提示',
+                content: '提示1111111111111是',
                 btnTextLeft: '取消',
                 btnTextRight: '你麻痹',
             });
