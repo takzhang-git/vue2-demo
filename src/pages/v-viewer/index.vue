@@ -1,22 +1,19 @@
 <template>
   <div>
     <!-- directive -->
-    <!-- <div class="images" v-viewer>
+    <div class="images" v-viewer>
       <img v-for="src in images" :key="src" :src="src">
-    </div> -->
+    </div>
     <!-- component -->
-    <!-- <viewer :images="images">
+    <viewer :images="images">
       <img v-for="src in images" :key="src" :src="src">
-    </viewer> -->
+    </viewer>
     <!-- api -->
     <button type="button" @click="show">Click to show</button>
   </div>
 </template>
 <script>
-//   import 'viewerjs/dist/viewer.css'
-//   import VueViewer from 'v-viewer'
-//   import Vue from 'vue'
-//   Vue.use(VueViewer)
+import { api as viewerApi } from 'v-viewer';
   export default {
     data() {
       return {
@@ -29,9 +26,12 @@
     },
     methods: {
       show() {
-        this.$viewerApi({
+        // this.$viewerApi({
+        //   images: this.images,
+        // })
+        viewerApi({
           images: this.images,
-        })
+        });
       },
     },
   }

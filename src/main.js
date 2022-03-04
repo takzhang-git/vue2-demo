@@ -3,7 +3,9 @@ import App from './App'
 import router from './router'
 import store from './store/index';
 import ElementUI from 'element-ui';
+import Antd from 'ant-design-vue';
 import 'element-ui/lib/theme-chalk/index.css';
+import 'ant-design-vue/dist/antd.css';
 import './common/style/main.css';
 import echarts from 'echarts';
 import validateRules from './common/utils/validate/validate';
@@ -16,6 +18,7 @@ takzhang.hello();
 Vue.use(Message);
 Vue.prototype.$echarts = echarts;
 Vue.use(ElementUI);
+Vue.use(Antd);
 Vue.use(validateRules);
 Vue.use(Viewer);
 Viewer.setDefaults({

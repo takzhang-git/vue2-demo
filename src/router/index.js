@@ -32,6 +32,16 @@ export default new Router({
       component: resolve => require(['@/pages/slot/index.vue'], resolve)
     },
     {
+      path: '/slot2',
+      name: 'slot2',
+      component: resolve => require(['@/pages/slot2/index.vue'], resolve)
+    },
+    {
+      path: '/slot3',
+      name: 'slot3',
+      component: resolve => require(['@/pages/slot3/index.vue'], resolve)
+    },
+    {
       path: '/render',
       name: 'render',
       component: () => import(/* webpackChunkName: render */ '@/pages/render')
