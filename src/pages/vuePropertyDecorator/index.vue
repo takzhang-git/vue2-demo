@@ -5,20 +5,19 @@
             <el-cascader
                 v-model="value"
                 :options="options"
-                @change="handleChange">
-            </el-cascader>
+                @change="handleChange" />
         </div>
         <propCom
-         :age="age"
-         :name="name"
-         :isOrMarry="isOrMarry"
+            :age="age"
+            :name="name"
+            :isOrMarry="isOrMarry"
         />
-        <div><span>父组件</span><input v-model="number1"/><button style="cursor: pointer" @click="addNum1">+</button></div>
-        <watchCom :num1="number1"/>
+        <div><span>父组件</span><input v-model="number1"><button style="cursor: pointer" @click="addNum1">+</button></div>
+        <watchCom :num1="number1" />
         <div class="emit-parent">
             <span>emit父组件测试用</span>
-            <div><el-input v-model="num2"/></div>
-            <emitCom @change="emitFromSon"/>
+            <div><el-input v-model="num2" /></div>
+            <emitCom @change="emitFromSon" />
         </div>
     </div>
 </template>

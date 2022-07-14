@@ -1,26 +1,26 @@
 <template>
     <div class="message" v-if="visible">
         <div class="toast">
-            <h2>{{title}}</h2>
+            <h2>{{ title }}</h2>
             <div class="toast-main">
-                <p class="main-text">{{content}}</p>
+                <p class="main-text">{{ content }}</p>
             </div>
             <div class="btn">
-                <span class="btn1" @click="clickLeft">{{btnTextLeft}}</span>
-                <span class="btn2" @click="clickRight">{{btnTextRight}}</span>
+                <span class="btn1" @click="clickLeft">{{ btnTextLeft }}</span>
+                <span class="btn2" @click="clickRight">{{ btnTextRight }}</span>
             </div>
         </div>
-        <div class="bg-cover"></div>
+        <div class="bg-cover" />
     </div>
 </template>
 <script>
-export default {
-    data() {
-        return {
-            visible: false,
-        }
-    },
-}
+    export default {
+        data() {
+            return {
+                visible: false,
+            }
+        },
+    }
 </script>
 <style lang="less" scoped>
     .message{
