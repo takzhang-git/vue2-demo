@@ -75,11 +75,6 @@
     import { china, factory } from './js/china';
     import { jiuyeHangye, renyuanBianhua, nianlingFenbu, xueXijindu, boFangliang, diquFenbu} from './js/index.js';
     export default {
-        data() {
-            return {
-                t: null, //定时器
-            }
-        },
         mounted() {
             flexible(window, document);
             this.time();
@@ -100,8 +95,7 @@
         },
         methods: {
             time(){
-                this.$nextTick(() => {
-                    clearTimeout(this.t); //清除定时器
+                setInterval(()=> {
                     const dt = new Date();
                     var y = dt.getFullYear();
                     var mt = dt.getMonth() + 1;
@@ -123,9 +117,8 @@
                         "分" +
                         s +
                         "秒";
-                    this.t = setTimeout(this.time, 1000); //设定定时器，循环运行
-                });
-            },
+                }, 1000);
+            }
         },
     }
 </script>

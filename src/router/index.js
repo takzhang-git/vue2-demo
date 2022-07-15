@@ -59,7 +59,7 @@ export default new Router({
     {
       path: '/viewBoard',
       name: 'viewBoard',
-      component: () => import(/* webpackChunkName: viewBoard */ '@/pages/viewBoard')
+      component: () => import(/* webpackChunkName: viewBoard */ '@/pages/viewBoardTest')
     },
     {
       path: '/functiontest',
