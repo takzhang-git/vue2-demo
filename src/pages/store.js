@@ -6,7 +6,7 @@ export default{
     getters: {},
     mutations: {},
     actions: {},
-    modules:{
+    modules: {
         vuextest,
         homes,
     }
