@@ -1,6 +1,7 @@
 <template>
     <div id="slot-noname">
-        <div class="button-list">{{'子组件的内容'}}
+        <div class="button-list">
+            {{ '子组件的内容' }}
             <el-button type="warning">提交</el-button>
             <el-button type="danger">保存</el-button>
         </div>
@@ -9,10 +10,10 @@
     </div>
 </template>
 <script>
-export default {
-    
-}
+    export default {
+
+    }
 </script>
 <style lang="less">
-    
+
 </style>
